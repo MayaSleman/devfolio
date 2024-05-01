@@ -99,9 +99,6 @@ border-bottom: 2px solid white;
 .about,.service{
     background-color: #e0e0e0;
 }
-.img-info{
-    border-radius: 10px;
-}
 .text-about{
     font-size: 20px;
     font-weight: 300 !important;
@@ -192,7 +189,6 @@ align-items: center;
     border: none;
     overflow: hidden;
 }
-
 .col-blue{
     color: #0078ff;
 }
@@ -269,7 +265,6 @@ align-items: center;
     width: 30px;
     border-radius: 50%;
 }
-
 .get h2{
     position: relative;
 }
