@@ -158,7 +158,7 @@ align-items: center;
     color:white !important;
 }
 .count{
-    background-image: url(/assets/images/counters-bg.jpg);
+    background-image: url(./../images/counters-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -218,7 +218,7 @@ align-items: center;
     cursor: pointer;
 }
 .slider{
-    background-image: url(/assets/images/overlay-bg.jpg);
+    background-image: url(./../images/overlay-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
