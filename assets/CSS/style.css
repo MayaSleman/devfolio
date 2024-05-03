@@ -42,27 +42,28 @@ html{
     position: fixed;
     z-index:100;
     background-color: transparent;
-    transition: all 0.3s;
-    /* opacity: 0; */
 }
 .nav .active{
 border-bottom: 2px solid white;
 }
-.nav a:hover{
-    animation-name: line;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
+.nav .nav-item{
+    position: relative;
+}
+.nav .nav-item::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0px;
+    background-color: white;
+    width: 0%;
+    transition: 0.3s all ease-in-out;
+}
+.nav .nav-item:hover::after{
+    width: 100%;
 }
 .navbar-toggler{
     border:none;
-}
-@keyframes line {
-    form{
-        border: 0px solid white;
-    }
-    to{
-        border-bottom: 3px solid white;
-    }
 }
 .fa-bars{
     color: white;
