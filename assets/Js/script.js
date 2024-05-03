@@ -29,35 +29,25 @@ window.addEventListener("scroll" ,()=>{
         arrow.style.visibility="hidden"
     }
 })
-var num1 = document.getElementById("count1");
-var num2 = document.getElementById("count2");
-var num3 = document.getElementById("count3");
-var num4 = document.getElementById("count4");
-
-function animatedCounter(element, start, end, duration){
-    var range =end - start;
-    var current = start;
-    var increment = 0;
-    if( end > start){
-        increment = 1;
+let nums = document.querySelectorAll(".num");
+let section = document.querySelector(".count");
+let started=false;
+window.onscroll = function(){
+    if(window.scrollY >= section.offsetTop){
+        if(!started){
+            nums.forEach((num) => startCount(num));
+        }
+        started =true;
     }
-    else{
-        increment = -1;
-    }
-var timer = setInterval(function(){
-    current += increment;
-    element.textContent = current;
-    if(current == end)
-    {
-        clearInterval(timer);
-    }
-},duration);
 }
-animatedCounter(num1, 1, 450, 100);
-animatedCounter(num2, 1, 25, 300);
-animatedCounter(num3, 1, 550, 100);
-animatedCounter(num4, 1, 48, 300);
-
-
-
+function startCount(el){
+    let goal = el.dataset.goal;
+    let count = setInterval(() =>{
+        el.textContent++;
+        if(el.textContent == goal){
+            clearInterval(count);
+        }
+    },3000 /goal)
+}
+startCount(document.querySelectorAll(".num"))
 

@@ -147,6 +147,7 @@ border-bottom: 2px solid white;
 }
 .card{
     border-radius: 20px;
+    transition: 0.s all ease-in-out;
 }
 .card:hover .icon ,.list-icon li:hover{
     background-color: #0078ff;
@@ -193,7 +194,12 @@ align-items: center;
 .protifolio .card{
     border-radius: 0px;
     border: none;
+    transition: all 1s;
+}
+.image{
     overflow: hidden;
+    transition: all 1s;
+
 }
 .col-blue{
     color: #0078ff;
@@ -202,7 +208,7 @@ align-items: center;
     font-size: 13px;
 }
 .protifolio .card:hover img{
-    scale: 1.2;
+    scale: 1.5;
 }
 .plus{
     display: flex;
@@ -475,6 +481,10 @@ footer p{
     }
     .slide-text{
         width: 80% !important;
+    }
+    .ff{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 @media (max-width : 800px) {
