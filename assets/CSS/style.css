@@ -53,6 +53,9 @@ border-bottom: 2px solid white;
     animation-duration: 0.5s;
     animation-timing-function: linear;
 }
+.navbar-toggler{
+    border:none;
+}
 @keyframes line {
     form{
         border: 0px solid white;
