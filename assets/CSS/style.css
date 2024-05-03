@@ -63,7 +63,7 @@ border-bottom: 2px solid white;
     width: 100%;
 }
 .navbar-toggler{
-    border:none;
+    border:none !important;
 }
 .fa-bars{
     color: white;
